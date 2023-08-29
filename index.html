@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <table id="my-table">
+
+            <thead>
+                <h3 id="current-cell">Cell Selected</h3>
+                 <button id="bold-btn">B</button>
+                 <button id="italics-btn">I</button>
+                 <button id="underline-btn">U</button>
+                 <button id="left-align">Left</button>
+                 <button id="center-align">Center</button>
+                 <button id="right-align">Right</button>
+
+                 <!-- for font size -->
+                 <select id="font-size">
+                 <option value="10px">12</option>
+                 <option value="14px">14</option>
+                 <option value="16px">16</option>
+                 <option value="18px">18</option>
+                 <option value="20px">20</option>
+                 </select>
+
+                 <!-- for font family -->
+                 <select id="font-family">
+                    <option value="serif">Serif</option>
+                    <option value="sans-serif">Sans Serif</option>
+                    <option value="cursive">Cursive</option>
+                    <option value="monospace">Monospace</option>
+                 </select>
+
+                <button id="cut-btn">Cut</button>
+                <button id="copy-btn">Copy</button>
+                <button id="paste-btn">Paste</button>
+                
+
+                <br><br>
+
+                <!-- input for bgColor -->
+                <label for="bgColor">Bg color</label>
+                <input type="color" id="bgColor">
+
+                <!-- input for textColor -->
+                 <label for="textColor">color</label>
+                 <input type="color" id="textColor">
+            
+                 <br><br>
+                 <!-- download sheet -->
+                 <button id="download-btn">Download</button>
+                 <!-- upload sheet -->
+                  <input type="file" id="uploadFile" accept=".json">
+
+                 <br><br>
+                  <!-- add multiple sheet -->
+                  <button id="add-sheet">Add Sheet</button>
+                  <h3 id="sheet-name">Sheet: 1</h3>
+
+                  <div class="sheet-Button-section">
+                  <button id="sheet-1" onclick="showTable(event)">sheet-1</button>
+                  <!-- <button id="sheet-3">sheet-3</button>  -->
+                 </div>
+                <tr id="table-heading-row">
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

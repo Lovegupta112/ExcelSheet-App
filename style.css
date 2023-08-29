@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+table,tr,th,td{
+border-collapse:collapse;
+border:1px solid black;    
+}
+table{
+    overflow-x:auto;
+}
+tr{
+    height:20px;
+}
+th,td{
+    min-width:80px;
+}
+tr th:nth-child(1){
+    min-width:50px;
+}
+/* for cell content */
+td div{
+    /* overflow-y:scroll; */
+    min-width:80px;
+    max-width:80px;
+    max-height:40px;
+   overflow-y:auto;
+   padding:3px;
+}
+td div::-webkit-scrollbar{
+    width:4px;
+    background: rgba(118, 109, 109, 0.615);
+}
+td>div:focus{
+ outline:none;
+}
